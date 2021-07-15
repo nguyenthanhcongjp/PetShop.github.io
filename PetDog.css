@@ -96,6 +96,21 @@ li{
     font-family: monospace;
     color: #e46f6f;
 }
+.Dog__Slide--Item p {
+    margin: 20px 0px;
+}
+.Dog__Slide--ItemText {
+    font-weight: bold;
+    font-size: 15px;
+    font-family: revert;
+    color: #543c3cbf;
+}
+.Dog__Slide--Item p:nth-child(3) {
+    font-size: 26px;
+    font-weight: 500;
+    font-family: monospace;
+    color: #d4489c;
+}
 
 
 
@@ -217,6 +232,101 @@ li{
     padding-right: 5px;
 }
 /* Team End */
+
+/* Contact Start */
+.Contact__Title {
+    margin: 0 10%;
+    background-color: #ededed;
+    padding: 5px 20px;
+    border-radius: 6px;
+    margin-top: 30px;
+}
+.Contact__Title div {
+    display: inline-block;
+}
+.Contact__Title div:first-child::after {
+    content: "|";
+    color: #ccc;
+    margin: 0px 6px;
+}
+.Contact__Content {
+    margin: 0 10%;
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+.Contact__Content--Container {
+    display: flex;
+    justify-content: space-between;
+}
+.Contact__Content--Container--Item {
+    padding: 0px 10px;
+    width: 50%;
+}
+.Contact__Infomation {
+    width: 100%;
+    border: 1px solid #dedede;
+}
+.Contact__Infomation--Title {
+    margin: 20px 0px;
+    text-align: center;
+    font-size: 23px;
+    font-weight: 500;
+}
+.Contact__Infomation--Container label, .Contact__Infomation--Container input {
+    display: block;
+}
+.Contact__Infomation--Container {
+    padding: 0px 15px;
+    margin-bottom: 20px;
+}
+.Contact__Infomation--Container label {
+    font-weight: 500;
+    font-size: 18px;
+    margin-bottom: 5px;
+}
+.Contact__Infomation--Container input {
+    border: 1px solid #dedede;
+    width: 100%;
+    height: 34px;
+    border-radius: 3px;
+    padding: 7px 12px;
+    line-height: 14px;
+    color: #555;
+}
+.Contact__Infomation--Container div {
+    margin-bottom: 12px;
+}
+.Contact__Infomation--Container  textarea {
+    width: 100%;
+    height: 150px;
+    padding: 7px 12px;
+    color: #555;
+}
+.Contact__Infomation--Container button {
+    width: 70px;
+    height: 30px;
+}
+.Contact__ResetAndSubmit {
+    text-align: center;
+}
+.Contact__ResetAndSubmit input:first-child {
+    color: #333;
+    background-color: #fff;
+    border-color: #ccc;
+    display: inline-block;
+    width: 90px;
+    height: 35px;
+}
+.Contact__ResetAndSubmit input:nth-child(2) {
+    color: #ffffff;
+    background-color: #4765ff;
+    border-color: #4765ff;
+    display: inline-block;
+    width: 90px;
+    height: 35px;
+}
+
+/* Contact End */
 
 /* Top Footer Start */
 .TopFooter {
