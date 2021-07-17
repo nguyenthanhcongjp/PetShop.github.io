@@ -9,6 +9,9 @@ $(() => {
         if (name__contact === '') {
             showError('名前を記入してください')
             e.preventDefault();
+        } else if (name__contact.length  < 7) {
+            showError('名前は6文字以上である必要があります。正確に名前を記入してください')
+            e.preventDefault();
         } else if (email__contact.length === 0) {
             showError('メールアドレスを記入してください')
             e.preventDefault();
@@ -40,3 +43,17 @@ $("#resetForm").click(function() {
 });
 // Contact End
 
+var slideIndex = 0;
+showSlides();
+
+function showSlides() {
+  var i;
+  var slides = document.getElementsByClassName("Team__Slide--Container");
+  for (i = 0; i < slides.length; i++) {
+    slides[i].style.display = "none";
+  }
+  slideIndex++;
+  if (slideIndex > slides.length) {slideIndex = 1}    
+  slides[slideIndex-1].style.display = "block";  
+  setTimeout(showSlides, 3000); // Change image every 2 seconds
+}

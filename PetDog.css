@@ -195,11 +195,15 @@ li{
 }
 .Team__Slide {
     margin-top: 80px;
+    width: 330px;
+    margin: 50px auto;
+    overflow: hidden;
     display: flex;
-    justify-content: space-between;
 }
 .Team__Slide--Container {
     width: 330px;
+    display: inline-block;
+    transition: all 3s ease 0s;
 }
 .Team__Slide--Container h4 {
     font-size: 16px;
