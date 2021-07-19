@@ -1,3 +1,12 @@
+// Header Menu Change Color Start
+var getLinkCss = document.getElementById('getLinkCss');
+
+function ChangeColor(href) {
+    getLinkCss.setAttribute("href", href);
+}
+// Header Menu Change Color End
+
+
 // Contact Start
 $(() => {
     $('#form__contact').submit(e => {
