@@ -204,21 +204,63 @@ li{
 /* Dogs Item End */
 
 /* Team Start */
+.Dogs {
+    width: 100%;
+    padding: 0 3%;
+    position: relative;
+}
+.Dogs__Container {
+    width: 100%;
+    text-align: center;
+}
+.Dogs__Container--Item {
+    display: inline-block;
+    padding: 130px 0px 0px 0px;
+    z-index: 2;
+    position: relative;
+}
+.Dogs::before {
+    content: "";
+    background-color: #FD8F38;
+    height: 3px;
+    width: 100%;
+    position: absolute;
+    bottom: 32px;
+    right: 0px;
+    left: 0px;
+}
+/* Dogs Item End */
+
+/* Team Start */
 .Team {
     width: 100%;
     padding: 0px 10%;
     margin-top: 100px;
-
+}
+.Team__Title {
+    background-color: #ededed;
+    padding: 5px 20px;
+    border-radius: 6px;
+    margin-top: 30px;
+}
+.Team__Title div {
+    display: inline-block;
+}
+.Team__Title div:first-child::after {
+    content: "|";
+    color: #ccc;
+    margin: 0px 6px;
 }
 .Team__TextTop {
     width: 100%;
     text-align: center;
-    font-weight: 700;
-    font-size: 29px;
     line-height: 32px;
-    margin: 0px 0px 10px;
-    color: #272727;
-    font-family: "Open Sans", sans-serif;
+    margin: 25px 0px 10px;
+    text-align: center;
+    font-size: 36px;
+    font-weight: 900;
+    font-family: monospace;
+    color: #e46f6f;
 }
 .Container__img {
     width: 330px;
@@ -240,7 +282,7 @@ li{
 .Team__Slide--Container {
     width: 330px;
     display: inline-block;
-    
+    transition: all 3s ease 0s;
 }
 .Team__Slide--Container h4 {
     font-size: 16px;
