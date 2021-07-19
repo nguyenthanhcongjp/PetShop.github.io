@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="./images/logo.png">
     <link rel="stylesheet" href="./PetDog.css">
     <link rel="stylesheet" href="./reset.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css" />
@@ -12,7 +13,7 @@
     <script src="./js/jquery-3.6.0.min.js"></script>
     <title>PET SHOP</title>
 </head>
-<body>
+<body id="home">
     <!-- Header Start -->
     <header class="Header">
         <div class="Header__Bottom">
@@ -23,13 +24,10 @@
                 </h1>
                 <div class="Bottom--Container--Right">
                     <ul>
-                        <li><a id="HomeButton" href="#">HOME</a></li>
-                        <li><a id="AboutButton" href="#">ABOUT</a></li>
-                        <li><a id="ProductsButton" href="#">PRODUCTS</a></li>
-                        <li><a id="TeamButton" href="#">TEAM</a></li>
-                        <li><a id="ContactButton" href="#">CONTACT</a></li>
-                        <li><a href="#"><img src="./images/icon_search.png"></a></li>
-                        <li><a href="#"><img src="./images/icon_cart.png"></a></li>
+                        <li><a id="HomeButton" href="#home">HOME</a></li>
+                        <li><a id="ProductsButton" href="#products">PRODUCTS</a></li>
+                        <li><a id="TeamButton" href="#team">TEAM</a></li>
+                        <li><a id="ContactButton" href="#contact">CONTACT</a></li>
                     </ul>
                 </div>
             </div>
@@ -53,7 +51,7 @@
     <!-- About End -->
 
     <!-- ProductsDog Start -->
-    <div class="ProductsDog">
+    <div class="ProductsDog"  id="products">
         <div class="ProductsDog__Container">
             <div class="ProductsDog__Title">
                 <div class="ProductsDog__Title--TextLeft">HOME</div>
@@ -63,103 +61,8 @@
         <div class="ProductsDog__ListItem">
             <div class="ProductsDog__ListItem--TitleCenter">LIST OF DOGS</div>
             <div class="container">
-                <div class="row">
-                    <div id="Dog__Slide" class="col-3">
-                        <div class="Dog__Slide--Item">
-                            <img src="https://matpetfamily.com/wp-content/uploads/2021/07/200608429_1998800203601387_6953752218993812307_n-270x270.jpg">
-                            <p class="Dog__Slide--ItemText">ID:SP00103</p>
-                            <p>GOLDEN</p>
-                            <p class="Dog__Slide--ItemText">600000￥</p>
-                        </div>
-                    </div>
-                    <div id="Dog__Slide" class="col-3">
-                        <div class="Dog__Slide--Item">
-                            <img src="https://matpetfamily.com/wp-content/uploads/2020/08/118386672_1750039115144165_4180396166377054737_o-270x270.jpg">
-                            <p class="Dog__Slide--ItemText">ID:SP00054</p>
-                            <p>CORGI</p>
-                            <p class="Dog__Slide--ItemText">25000￥</p>
-                        </div>
-                    </div>
-                    <div id="Dog__Slide" class="col-3">
-                        <div class="Dog__Slide--Item">
-                            <img style="object-fit: cover;" width="270px" height="270px" src="https://images.unsplash.com/photo-1558788353-f76d92427f16?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=378&q=80">
-                            <p class="Dog__Slide--ItemText">ID:SP00055</p>
-                            <p>GOLDEN</p>
-                            <p class="Dog__Slide--ItemText">800000￥</p>
-                        </div>
-                    </div>
-                    <div id="Dog__Slide" class="col-3">
-                        <div class="Dog__Slide--Item">
-                            <img style="object-fit: cover;" width="270px" height="270px" src="https://images.unsplash.com/photo-1583511655857-d19b40a7a54e?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=749&q=80">
-                            <p class="Dog__Slide--ItemText">ID:SP00060</p>
-                            <p>PUG</p>
-                            <p class="Dog__Slide--ItemText">120000￥</p>
-                        </div>
-                    </div>
-                    <div id="Dog__Slide" class="col-3">
-                        <div class="Dog__Slide--Item">
-                            <img src="https://matpetfamily.com/wp-content/uploads/2019/12/36993247_1082359718578778_3104054267334361088_n_960x780-270x270.jpg">
-                            <p class="Dog__Slide--ItemText">ID:12212974</p>
-                            <p>POODLE</p>
-                            <p class="Dog__Slide--ItemText">15000￥</p>
-                        </div>
-                    </div>
-                    <div id="Dog__Slide" class="col-3">
-                        <div class="Dog__Slide--Item">
-                            <img src="https://matpetfamily.com/wp-content/uploads/2020/02/26.2b-270x270.jpg">
-                            <p class="Dog__Slide--ItemText">ID:SP00011</p>
-                            <p>SAMOYED</p>
-                            <p class="Dog__Slide--ItemText">120000￥</p>
-                        </div>
-                    </div>
-                    <div id="Dog__Slide" class="col-3">
-                        <div class="Dog__Slide--Item">
-                            <img style="object-fit: cover;" width="270px" height="270px" src="https://images.unsplash.com/photo-1520087619250-584c0cbd35e8?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=385&q=80">
-                            <p class="Dog__Slide--ItemText">ID:SP00018</p>
-                            <p>Dachshund</p>
-                            <p class="Dog__Slide--ItemText">400000￥</p>
-                        </div>
-                    </div>
-                    <div id="Dog__Slide" class="col-3">
-                        <div class="Dog__Slide--Item">
-                            <img style="object-fit: cover;" width="270px" height="270px" src="https://c4.wallpaperflare.com/wallpaper/487/261/97/dogs-husky-animal-baby-animal-wallpaper-preview.jpg">
-                            <p class="Dog__Slide--ItemText">ID:SP000214</p>
-                            <p>HUSKY</p>
-                            <p class="Dog__Slide--ItemText">540000￥</p>
-                        </div>
-                    </div>
-                    <div id="Dog__Slide" class="col-3">
-                        <div class="Dog__Slide--Item">
-                            <img style="object-fit: cover;" width="270px" height="270px" src="https://images.unsplash.com/photo-1518020382113-a7e8fc38eac9?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=360&q=80">
-                            <p class="Dog__Slide--ItemText">ID:SP000219</p>
-                            <p>PUG</p>
-                            <p class="Dog__Slide--ItemText">670000￥</p>
-                        </div>
-                    </div>
-                    <div id="Dog__Slide" class="col-3">
-                        <div class="Dog__Slide--Item">
-                            <img style="object-fit: cover;" width="270px" height="270px" src="https://images.unsplash.com/photo-1505628346881-b72b27e84530?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=334&q=80">
-                            <p class="Dog__Slide--ItemText">ID:SP000215</p>
-                            <p>Tibetan Mastiff</p>
-                            <p class="Dog__Slide--ItemText">1000000￥</p>
-                        </div>
-                    </div>
-                    <div id="Dog__Slide" class="col-3">
-                        <div class="Dog__Slide--Item">
-                            <img style="object-fit: cover;" width="270px" height="270px" src="https://images.unsplash.com/photo-1527362950785-f487a7c1fe48?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=331&q=80">
-                            <p class="Dog__Slide--ItemText">ID:SP006145</p>
-                            <p>SAMOYED AND OWNER</p>
-                            <p class="Dog__Slide--ItemText">7000000￥</p>
-                        </div>
-                    </div>
-                    <div id="Dog__Slide" class="col-3">
-                        <div class="Dog__Slide--Item">
-                            <img style="object-fit: cover;" width="270px" height="270px" src="https://thucanh.net/wp-content/uploads/2021/04/anh-cho-becgie-duc142.jpg">
-                            <p class="Dog__Slide--ItemText">ID:SP006256</p>
-                            <p>BECGIE</p>
-                            <p class="Dog__Slide--ItemText">860000￥</p>
-                        </div>
-                    </div>
+                <div class="row" id="ElementDog">
+                   
                 </div>
             </div>
         </div>
@@ -170,7 +73,7 @@
 
 
     <!-- Team Start -->
-    <div class="Team">
+    <div class="Team" id="team">
         <div class="Team__Title">
             <div>HOME</div>
             <div>TEAM</div>
@@ -184,10 +87,10 @@
                 <p>現在、1年生大原簿記公務員医療ビジネス専門学校津田沼校</p>
                 <div class="Container__Item">
                     <ul>
-                        <li><a href="#"><i class="fab fa-facebook"></i></a></li>
-                        <li><a href="#"><i class="fab fa-twitter"></i></a></li>
-                        <li><a href="#"><i class="fab fa-instagram"></i></a></li>
-                        <li><a href="#"><i class="fab fa-google-plus-g"></i></a></li>
+                        <li><a href="https://www.facebook.com/street.ub/"><i class="fab fa-facebook"></i></a></li>
+                        <li><a href="https://twitter.com/ohara_tsudanuma"><i class="fab fa-twitter"></i></a></li>
+                        <li><a href="https://www.instagram.com/congnguyen1201/?hl=ja"><i class="fab fa-instagram"></i></a></li>
+                        <li><a href="https://www.tiktok.com/foryou?from=sw"><i class="fab fa-tiktok"></i></a></li>
                     </ul>
                 </div>
             </div>
@@ -198,10 +101,10 @@
                 <p>現在、営業担当者として働いています</p>
                 <div class="Container__Item">
                     <ul>
-                        <li><a href="#"><i class="fab fa-facebook"></i></a></li>
-                        <li><a href="#"><i class="fab fa-twitter"></i></a></li>
-                        <li><a href="#"><i class="fab fa-instagram"></i></a></li>
-                        <li><a href="#"><i class="fab fa-google-plus-g"></i></a></li>
+                        <li><a href="https://www.facebook.com/street.ub/"><i class="fab fa-facebook"></i></a></li>
+                        <li><a href="https://twitter.com/ohara_tsudanuma"><i class="fab fa-twitter"></i></a></li>
+                        <li><a href="https://www.instagram.com/congnguyen1201/?hl=ja"><i class="fab fa-instagram"></i></a></li>
+                        <li><a href="https://www.tiktok.com/foryou?from=sw"><i class="fab fa-tiktok"></i></a></li>
                     </ul>
                 </div>
             </div>
@@ -212,10 +115,10 @@
                 <p>現在、営業担当者として働いています</p>
                 <div class="Container__Item">
                     <ul>
-                        <li><a href="#"><i class="fab fa-facebook"></i></a></li>
-                        <li><a href="#"><i class="fab fa-twitter"></i></a></li>
-                        <li><a href="#"><i class="fab fa-instagram"></i></a></li>
-                        <li><a href="#"><i class="fab fa-google-plus-g"></i></a></li>
+                        <li><a href="https://www.facebook.com/street.ub/"><i class="fab fa-facebook"></i></a></li>
+                        <li><a href="https://twitter.com/ohara_tsudanuma"><i class="fab fa-twitter"></i></a></li>
+                        <li><a href="https://www.instagram.com/congnguyen1201/?hl=ja"><i class="fab fa-instagram"></i></a></li>
+                        <li><a href="https://www.tiktok.com/foryou?from=sw"><i class="fab fa-tiktok"></i></a></li>
                     </ul>
                 </div>
             </div>
@@ -226,10 +129,10 @@
                 <p>現在、営業担当者として働いています</p>
                 <div class="Container__Item">
                     <ul>
-                        <li><a href="#"><i class="fab fa-facebook"></i></a></li>
-                        <li><a href="#"><i class="fab fa-twitter"></i></a></li>
-                        <li><a href="#"><i class="fab fa-instagram"></i></a></li>
-                        <li><a href="#"><i class="fab fa-google-plus-g"></i></a></li>
+                        <li><a href="https://www.facebook.com/street.ub/"><i class="fab fa-facebook"></i></a></li>
+                        <li><a href="https://twitter.com/ohara_tsudanuma"><i class="fab fa-twitter"></i></a></li>
+                        <li><a href="https://www.instagram.com/congnguyen1201/?hl=ja"><i class="fab fa-instagram"></i></a></li>
+                        <li><a href="https://www.tiktok.com/foryou?from=sw"><i class="fab fa-tiktok"></i></a></li>
                     </ul>
                 </div>
             </div>
@@ -240,10 +143,10 @@
                 <p>現在、1年生大原簿記公務員医療ビジネス専門学校津田沼校</p>
                 <div class="Container__Item">
                     <ul>
-                        <li><a href="#"><i class="fab fa-facebook"></i></a></li>
-                        <li><a href="#"><i class="fab fa-twitter"></i></a></li>
-                        <li><a href="#"><i class="fab fa-instagram"></i></a></li>
-                        <li><a href="#"><i class="fab fa-google-plus-g"></i></a></li>
+                        <li><a href="https://www.facebook.com/street.ub/"><i class="fab fa-facebook"></i></a></li>
+                        <li><a href="https://twitter.com/ohara_tsudanuma"><i class="fab fa-twitter"></i></a></li>
+                        <li><a href="https://www.instagram.com/congnguyen1201/?hl=ja"><i class="fab fa-instagram"></i></a></li>
+                        <li><a href="https://www.tiktok.com/foryou?from=sw"><i class="fab fa-tiktok"></i></a></li>
                     </ul>
                 </div>
             </div>
@@ -284,7 +187,7 @@
     
     
     <!-- Contact Start -->
-    <div class="Contact">
+    <div class="Contact" id="contact">
         <div class="Contact__Title">
             <div>HOME</div>
             <div>CONTACT</div>
@@ -399,27 +302,22 @@
     <footer>
         <div class="container">
             <div class="row">
-                <!--Start copyright-->
                 <div class="col-md-6 col-sm-6 col-xs-6">
                     <div class="copyright"><p>Copyright © 2021 All Rights reserved by: <a href="https://github.com/nguyenthanhcongjp">NGUYEN THANH CONG</a>
                   </p></div>
                 </div>
-                <!--End copyright-->
-                
-                <!--start social icons-->
                 <div class="col-md-6 col-sm-6 col-xs-6">
                     <div class="social-icons">
                         <ul>
-                         <li><a href="#"><i class="fab fa-facebook"></i></a></li>
-                         <li> <a href="#"><i class="fab fa-twitter"></i></a></li>
-                         <li><a href="#"><i class="fab fa-google-plus-g"></i></a></li>
-                         <li><a href="#"><i class="fab fa-instagram"></i></a></li>
+                         <li><a href="https://www.facebook.com/street.ub/"><i class="fab fa-facebook"></i></a></li>
+                         <li> <a href="https://twitter.com/ohara_tsudanuma"><i class="fab fa-twitter"></i></a></li>
+                         <li><a href="https://www.instagram.com/congnguyen1201/?hl=ja"><i class="fab fa-instagram"></i></a></li>
+                         <li><a href="https://www.tiktok.com/foryou?from=sw"><i class="fab fa-tiktok"></i></a></li>
                         </ul>
                      </div>
                 </div>
-                <!--End social icons-->
-            </div> <!-- /.row-->
-        </div> <!-- /.container-->
+            </div>
+        </div>
     </footer>
     <!-- Footer End -->
 
